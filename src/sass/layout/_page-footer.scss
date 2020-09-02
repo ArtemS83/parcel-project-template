@@ -1,4 +1,102 @@
 .page-footer {
-    box-sizing: border-box;
+    margin: 0 auto;
     background-color: $pink-background-color;
+
+    @media screen and (min-width: $mobile) {
+        width: $mobile;
+        height: 1912px;
+    }
+
+    @media screen and (min-width: $tablet) {
+        width: $tablet;
+        height: 1103px;
+    }
+
+    @media screen and (min-width: $desctop) {
+        width: $desctop;
+        height: 1022px;
+    }
+
+    .container {
+        padding-top: 1291px;
+
+        @media screen and (min-width: $tablet) {
+            padding-top: 547px;
+        }
+
+        @media screen and (min-width: $desctop) {
+            padding-top: 556px;
+        }
+    }
+}
+
+.footer-buttons {
+    margin-bottom: 113px;
+
+    @media screen and (min-width: $tablet) {
+        margin-bottom: 165px;
+    }
+}
+
+.footer-slogan {
+    margin-bottom: 43px;
+
+    @media screen and (min-width: $tablet) {
+        margin: 0px;
+    }
+}
+
+.footer-slogan-top {
+    margin-bottom: 17px;
+    font-family: $title-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: $pink-color;
+}
+
+.footer-slogan-bottom {
+    font-family: $title-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 55px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: $main-title-color;
+}
+// уточнити після вводу лінії
+.footer-slogan-socaddress {
+    margin-bottom: 65px;
+
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        margin-bottom: 120px;
+    }
+
+    @media screen and (min-width: $desctop) {
+        margin-bottom: 106px;
+    }
+}
+
+.footer-socaddress {
+    width: 230px;
+}
+
+.footer-soc-list {
+    display: flex;
+    margin-bottom: 46px;
+    
+    @media screen and (min-width: $desctop) {
+        margin-bottom: 50px;
+    }
+}
+
+.footer-soc-list-item:not(:last-child) {
+    margin-right: 28px;
 }
