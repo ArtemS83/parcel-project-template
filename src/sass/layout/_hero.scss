@@ -1,15 +1,34 @@
 .hero {
+
+  background-image: url(../images/section-hero/bg-image-mob.jpg);
+  background-size: cover;
+}
+
+.container {
+
   position: relative;
   top: -56px;
   margin-bottom: -56px;
+
   height: 502px;
-  background-image: url(../images/section-hero/ice-cream-mob.svg),
-    url(../images/section-hero/bg-ellipse-mob.svg),
-    url(../images/section-hero/bg-image-mob.jpg);
-  background-repeat: no-repeat;
-  background-position: bottom right 32px, right, center;
-  background-size: 171px, 270px, cover;
-  padding-top: 193px;
+  @media screen and (max-width: 767px) {
+    background-image: url(../images/section-hero/ice-cream-mob.svg),
+      url(../images/section-hero/bg-ellipse-mob.svg),
+      url(../images/section-hero/bg-image-mob.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom right 32px, top 83px right -62px, center;
+    background-size: 171px, 346px, cover;
+    padding-top: 193px;
+  }
+  @media screen and (min-width: 380px) and (max-width: 767px) {
+    background-image: url(../images/section-hero/ice-cream-mob.svg),
+      url(../images/section-hero/bg-ellipse-mob.svg),
+      url(../images/section-hero/bg-image-mob.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom right 32px, right, center;
+    background-size: 171px, 320px, cover;
+    padding-top: 193px;
+  }
 
   @media screen and (min-width: 768px) {
     // position: relative;
@@ -54,16 +73,6 @@
   }
 }
 
-@media screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx),
-  screen and (min-width: 320px) and (max-width: 767px) {
-  .hero {
-    background-image: url(../images/section-hero/ice-cream-mob@2x.svg),
-      url(../images/section-hero/bg-ellipse-mob@2x.svg),
-      url(../images/section-hero/bg-image-mob@2x.jpg);
-  }
-}
 @media screen and (max-width: 767px) {
   .hero-shop,
   .hero-product-description,
@@ -198,7 +207,7 @@
     font-size: 8px;
     line-height: 1.5;
     color: $write-color;
-    margin-left: 100px;
+    margin-left: 130px;
     margin-top: 50px;
     margin-bottom: 7px;
   }
@@ -251,7 +260,10 @@
     background-size: contain;
     border-color: transparent;
     cursor: pointer;
-    margin-left: 100px;
+
+    margin-left: 130px;
+
+
   }
 }
 
@@ -264,7 +276,7 @@
     font-size: 14px;
     line-height: 1.4;
     color: $write-color;
-    margin-left: 170px;
+    margin-left: 270px;
     margin-top: 300px;
     margin-bottom: 20px;
   }
