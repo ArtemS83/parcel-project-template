@@ -1,59 +1,59 @@
 <section class="slider section">
   <h2 class="visually-hidden">Comments slider</h2>
-  <img
-    class="slider-clients-images"
-    src="./images/slider/bg-mob.jpg"
-    alt="clients images"
-  />
-  <!-- <picture>
-                      <source
-                        media="(max-width: 767px)"
-                        srcset="
-                          ./images/portfolio/project-1-mob.jpg    1x,
-                          ./images/portfolio/project-1-mob@2x.jpg 2x
-                        "
-                        type="image/jpeg" />
-                      <source
-                        media="(min-width: 768px) and (max-width: 1199px) "
-                        srcset="
-                          ./images/portfolio/project-1-tab.jpg    1x,
-                          ./images/portfolio/project-1-tab@2x.jpg 2x
-                        "
-                        type="image/jpeg" />
-                      <img
-                        srcset="
-                          ./images/portfolio/project-1-desc.jpg    1x,
-                          ./images/portfolio/project-1-desc@2x.jpg 2x
-                        "
-                        src="./images/slider/bg-mob.jpg"
-                        alt="clients images"
-                    /></picture> -->
+  <picture>
+    <source
+      media="(max-width: 767px)"
+      srcset="./images/slider/bg-mob.jpg 1x, ./images/slider/bg-mob@2x.jpg 2x"
+      type="image/jpeg" />
+    <source
+      media="(min-width: 768px) and (max-width: 1199px) "
+      srcset="./images/slider/bg-tab.jpg 1x, ./images/slider/bg-tab@2x.jpg 2x"
+      type="image/jpeg" />
+    <img
+      class="slider-clients-images"
+      srcset="./images/slider/bg-desk.jpg 1x, ./images/slider/bg-desk@2x.jpg 2x"
+      src="./images/slider/bg-tab.jpg"
+      alt="clients images"
+  /></picture>
   <div class="container">
-    <!-- <div class="slider-images"></div> -->
-    <ul class="slider-list list">
-      <li class="slider-item">
-        <!-- <img
-          srcset="./images/demo.jpg 1x, ./images/demo@2x.jpg 2x"
-          src="./images/demo.jpg"
-          alt="client-1"
-          width="85"
-          height="85"
-        /> -->
+    <div class="slider-list">
+      <input
+        id="slide-img-1"
+        class="slider-input"
+        name="slide-img"
+        type="radio"
+        checked="checked"
+      />
+      <input
+        id="slide-img-2"
+        class="slider-input"
+        name="slide-img"
+        type="radio"
+      />
+      <input
+        id="slide-img-3"
+        class="slider-input"
+        name="slide-img"
+        type="radio"
+      />
+      <div class="slider-item visible1">
         <a
           class="slider-link link"
-          href=""
+          href="https://www.facebook.com/"
           target="_blank"
           aria-label="client stories"
           ><img
             class="slider-img-client"
+            srcset="
+              ./images/slider/client-1.jpg    1x,
+              ./images/slider/client-1@2x.jpg 2x
+            "
             src="./images/slider/client-1.jpg"
             alt="client-1"
             width="85"
             height="85"
         /></a>
-        <!-- <svg class="slider-text-icon" width="54" height="40">
-          <use href="./images/sprite.svg#icon-"></use>
-        </svg> -->
+
         <div class="slider-text-wrapper">
           <p class="slider-text">
             Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
@@ -61,27 +61,30 @@
             ipsum primis in nibh vel risus.
           </p>
         </div>
-
+        <img
+          class="slider-ellipse-icon"
+          src="./images/slider/group-red.svg"
+          alt="group-red"
+          width="32"
+          height="4"
+        />
         <!-- <svg class="slider-ellipse-icon" width="32" height="4">
-          <use href="./images/sprite.svg#icon-"></use>
+          <use href="./images/sprite.svg#icon-group-red"></use>
         </svg> -->
         <p class="slider-client-info">Emily, Los Angeles</p>
-      </li>
-      <li class="slider-item">
-        <!-- <img
-          srcset="./images/demo.jpg 1x, ./images/demo@2x.jpg 2x"
-          src="./images/demo.jpg"
-          alt="client-1"
-          width="85"
-          height="85"
-        /> -->
+      </div>
+      <div class="slider-item visible2">
         <a
           class="slider-link link"
-          href=""
+          href="https://www.facebook.com/"
           target="_blank"
           aria-label="client stories"
           ><img
             class="slider-img-client"
+            srcset="
+              ./images/slider/client-2.jpg    1x,
+              ./images/slider/client-2@2x.jpg 2x
+            "
             src="./images/slider/client-2.jpg"
             alt="client-2"
             width="85"
@@ -98,26 +101,30 @@
           </p>
         </div>
 
+        <img
+          class="slider-ellipse-icon"
+          src="./images/slider/group-red.svg"
+          alt="group-red"
+          width="32"
+          height="4"
+        />
         <!-- <svg class="slider-ellipse-icon" width="32" height="4">
-          <use href="./images/sprite.svg#icon-"></use>
+          <use href="./images/sprite.svg#icon-group-red"></use>
         </svg> -->
-        <p class="slider-client-info">Emily, Los Angeles</p>
-      </li>
-      <li class="slider-item">
-        <!-- <img
-          srcset="./images/demo.jpg 1x, ./images/demo@2x.jpg 2x"
-          src="./images/demo.jpg"
-          alt="client-1"
-          width="85"
-          height="85"
-        /> -->
+        <p class="slider-client-info">Anna, London</p>
+      </div>
+      <div class="slider-item visible3">
         <a
           class="slider-link link"
-          href=""
+          href="https://www.facebook.com/"
           target="_blank"
           aria-label="client stories"
           ><img
             class="slider-img-client"
+            srcset="
+              ./images/slider/client-3.jpg    1x,
+              ./images/slider/client-3@2x.jpg 2x
+            "
             src="./images/slider/client-3.jpg"
             alt="client-3"
             width="85"
@@ -134,11 +141,35 @@
           </p>
         </div>
 
+        <img
+          class="slider-ellipse-icon"
+          src="./images/slider/group-red.svg"
+          alt="group-red"
+          width="32"
+          height="4"
+        />
         <!-- <svg class="slider-ellipse-icon" width="32" height="4">
-          <use href="./images/sprite.svg#icon-"></use>
+          <use href="./images/sprite.svg#icon-group-red"></use>
         </svg> -->
-        <p class="slider-client-info">Emily, Los Angeles</p>
-      </li>
-    </ul>
+        <p class="slider-client-info">Ewa, New York</p>
+      </div>
+      <div class="slider-navigation">
+        <label class="slider-navigation-bar" for="slide-img-1">
+          <svg class="slider-navigation-icon home" width="12" height="12">
+            <use href="./images/sprite.svg#icon-home"></use>
+          </svg>
+        </label>
+        <label class="slider-navigation-bar" for="slide-img-2">
+          <svg class="slider-navigation-icon ellipse2" width="12" height="12">
+            <use href="./images/sprite.svg#icon-ellipse-grow"></use>
+          </svg>
+        </label>
+        <label class="slider-navigation-bar" for="slide-img-3">
+          <svg class="slider-navigation-icon ellipse3" width="12" height="12">
+            <use href="./images/sprite.svg#icon-ellipse-grow"></use>
+          </svg>
+        </label>
+      </div>
+    </div>
   </div>
 </section>

@@ -1,9 +1,15 @@
 .hero {
+
   background-image: url(../images/section-hero/bg-image-mob.jpg);
   background-size: cover;
 }
 
 .container {
+
+  position: relative;
+  top: -56px;
+  margin-bottom: -56px;
+
   height: 502px;
   @media screen and (max-width: 767px) {
     background-image: url(../images/section-hero/ice-cream-mob.svg),
@@ -25,7 +31,9 @@
   }
 
   @media screen and (min-width: 768px) {
-    position: relative;
+    // position: relative;
+    top: -84px;
+    margin-bottom: -84px;
     height: 399px;
     background-image: url(../images/section-hero/ellipse-hero-shop-number.svg),
       url(../images/section-hero/ellipse-hero-shop-number.svg),
@@ -44,7 +52,9 @@
   }
 
   @media screen and (min-width: 1200px) {
-    position: relative;
+    // position: relative;
+    top: -81px;
+    margin-bottom: -81px;
     height: 665px;
     background-image: url(../images/section-hero/ellipse-hero-shop-number.svg),
       url(../images/section-hero/ellipse-hero-shop-number.svg),
@@ -250,7 +260,10 @@
     background-size: contain;
     border-color: transparent;
     cursor: pointer;
+
     margin-left: 130px;
+
+
   }
 }
 
