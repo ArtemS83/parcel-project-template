@@ -1,9 +1,10 @@
 .hero {
-  background-image: url(../images/section-hero/bg-image-mob.jpg);
-  background-size: cover;
+  // background-image: url(../images/section-hero/bg-image-mob.jpg);
+  // background-size: cover;
+  // background-repeat: no-repeat;
 }
 
-.container {
+.hero .container {
   position: relative;
   top: -56px;
   margin-bottom: -56px;
