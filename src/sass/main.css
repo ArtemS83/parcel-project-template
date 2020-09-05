@@ -376,16 +376,36 @@ p {
 }
 
 .hero {
+  background-image: url(../images/section-hero/bg-image-mob.jpg);
+  background-size: cover;
+}
+
+.container {
   height: 502px;
-  background-image: url(../images/section-hero/ice-cream-mob.svg), url(../images/section-hero/bg-ellipse-mob.svg), url(../images/section-hero/bg-image-mob.jpg);
-  background-repeat: no-repeat;
-  background-position: bottom right 32px, right, center;
-  background-size: 171px, 270px, cover;
-  padding-top: 193px;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    background-image: url(../images/section-hero/ice-cream-mob.svg), url(../images/section-hero/bg-ellipse-mob.svg), url(../images/section-hero/bg-image-mob.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom right 32px, top 83px right -62px, center;
+    background-size: 171px, 346px, cover;
+    padding-top: 193px;
+  }
+}
+
+@media screen and (min-width: 380px) and (max-width: 767px) {
+  .container {
+    background-image: url(../images/section-hero/ice-cream-mob.svg), url(../images/section-hero/bg-ellipse-mob.svg), url(../images/section-hero/bg-image-mob.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom right 32px, right, center;
+    background-size: 171px, 320px, cover;
+    padding-top: 193px;
+  }
 }
 
 @media screen and (min-width: 768px) {
-  .hero {
+  .container {
     position: relative;
     height: 399px;
     background-image: url(../images/section-hero/ellipse-hero-shop-number.svg), url(../images/section-hero/ellipse-hero-shop-number.svg), url(../images/section-hero/slider-pic-milk-tablet.svg), url(../images/section-hero/slider-pic-icecream-tablet.svg), url(../images/section-hero/ice-cream-mob.svg), url(../images/section-hero/ellipse-img-tablet.svg), url(../images/section-hero/bg-image-mob.jpg);
@@ -398,7 +418,7 @@ p {
 }
 
 @media screen and (min-width: 1200px) {
-  .hero {
+  .container {
     position: relative;
     height: 665px;
     background-image: url(../images/section-hero/ellipse-hero-shop-number.svg), url(../images/section-hero/ellipse-hero-shop-number.svg), url(../images/section-hero/slider-pic-milk-tablet.svg), url(../images/section-hero/slider-pic-icecream-tablet.svg), url(../images/section-hero/ice-cream-mob.svg), url(../images/section-hero/ellipse-img-tablet.svg), url(../images/section-hero/bg-image-mob.jpg);
@@ -407,12 +427,6 @@ p {
     background-size: 30px, 30px, 188px, 293px, 236px, 538px, cover;
     padding-top: 193px;
     padding-left: 20px;
-  }
-}
-
-@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx), screen and (min-width: 320px) and (max-width: 767px) {
-  .hero {
-    background-image: url(../images/section-hero/ice-cream-mob@2x.svg), url(../images/section-hero/bg-ellipse-mob@2x.svg), url(../images/section-hero/bg-image-mob@2x.jpg);
   }
 }
 
@@ -540,7 +554,7 @@ p {
     font-size: 8px;
     line-height: 1.5;
     color: #ffffff;
-    margin-left: 100px;
+    margin-left: 130px;
     margin-top: 50px;
     margin-bottom: 7px;
   }
@@ -590,7 +604,8 @@ p {
     background-image: url(../images/section-hero/arrow-right-3.svg);
     background-size: contain;
     border-color: transparent;
-    margin-left: 100px;
+    cursor: pointer;
+    margin-left: 130px;
   }
 }
 
@@ -602,7 +617,7 @@ p {
     font-size: 14px;
     line-height: 1.4;
     color: #ffffff;
-    margin-left: 170px;
+    margin-left: 270px;
     margin-top: 300px;
     margin-bottom: 20px;
   }
