@@ -21,6 +21,11 @@
 .secondary-button {
   color: $write-color;
   background-color: #d41342;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
 }
 .cow .primary-button {
   display: block;
@@ -32,6 +37,7 @@
   padding-bottom: 6px;
   text-align: center;
   cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .cow .primary-button:hover,
 .cow .primary-button:focus {

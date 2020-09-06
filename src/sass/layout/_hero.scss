@@ -250,15 +250,19 @@
   }
   .hero-button {
     width: 18px;
-
+    height: 18px;
+    margin-left: 130px;
     border-radius: 50%;
     border: none;
     background-image: url(../images/section-hero/arrow-right-3.svg);
     background-size: contain;
     border-color: transparent;
     cursor: pointer;
-
-    margin-left: 130px;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      opacity: 0.7;
+    }
   }
 }
 
