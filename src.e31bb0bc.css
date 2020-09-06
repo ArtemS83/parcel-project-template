@@ -1554,6 +1554,7 @@ p {
 }
 .slider-navigation-icon {
   fill: #d9d9d9;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .slider-list {
   position: relative;
@@ -1575,7 +1576,9 @@ p {
 .slider-item {
   width: 100%;
   position: absolute;
+  opacity: 0;
   visibility: hidden;
+  transition: opacity 0.3s, visibility 0s linear 0.3s;
 }
 .slider-img-client {
   margin-left: auto;
@@ -1639,7 +1642,9 @@ p {
 #slide-img-1:checked ~ .slider-item.visible1,
 #slide-img-2:checked ~ .slider-item.visible2,
 #slide-img-3:checked ~ .slider-item.visible3 {
+  opacity: 1;
   visibility: visible;
+  transition-delay: 0.25s;
 }
 
 #slide-img-1:checked ~ .slider-navigation .home,
