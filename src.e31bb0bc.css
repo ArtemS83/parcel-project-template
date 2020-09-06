@@ -319,6 +319,7 @@ p {
 }
 
 .container {
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-left: 20px;
@@ -350,11 +351,12 @@ p {
   background-color: #ffffff;
   font-family: "DM Sans", sans-serif;
   font-weight: 700;
-  font-size: 1.31;
-  line-height: 21px;
+  font-size: 16px;
+  line-height: 1.31;
   text-align: center;
   border-radius: 22px;
   padding-top: 6px;
+  padding-bottom: 6px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -453,7 +455,7 @@ p {
   max-width: 100%;
   height: 44px;
   margin-bottom: 19px;
-  background: #ffffff;
+  background-color: #ffffff;
   border-radius: 22px;
   border: none;
   cursor: pointer;
@@ -527,17 +529,17 @@ p {
 }
 @media screen and (max-width: 1199px) {
   .menu-container {
-    text-align: center;
-    display: none;
     position: absolute;
     top: 0;
     right: 0;
+    text-align: center;
+    display: none;
     padding-top: 60px;
     padding-bottom: 171px;
     width: 250px;
     max-width: 100%;
     height: 502px;
-    background: #e17992;
+    background-color: #e17992;
     filter: drop-shadow(-8px 0px 20px rgba(0, 0, 0, 0.25));
     font-weight: 700;
     font-size: 14px;
@@ -571,14 +573,14 @@ p {
     max-width: 100%;
     height: 44px;
     margin-left: 30px;
-    background: #ffffff;
-    border-radius: 22px;
-    border: none;
-    cursor: pointer;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.31;
     color: #d41443;
+    background-color: #ffffff;
+    border-radius: 22px;
+    border: none;
+    cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .header-buy-btn .header-button-element {
@@ -807,16 +809,15 @@ p {
     font-size: 14px;
     line-height: 1.28;
     padding-top: 10px;
+    padding-bottom: 10px;
   }
 
   .hero-buttons .primary-button {
     width: 138px;
-    height: 40px;
   }
 
   .hero-buttons .secondary-button {
     width: 104px;
-    height: 40px;
   }
 
   .hero-buttons {
@@ -882,7 +883,6 @@ p {
 
   .hero-button {
     width: 18px;
-    height: 18px;
     border-radius: 50%;
     border: none;
     background-image: url(/arrow-right-3.424efebf.svg);
@@ -956,12 +956,10 @@ p {
 @media screen and (max-width: 1199px) {
   .hero-buttons .secondary-button {
     width: 63px;
-    height: 24px;
   }
 
   .hero-buttons .primary-button {
     width: 83px;
-    height: 24px;
   }
 }
 .section-products {
@@ -973,8 +971,6 @@ p {
   text-align: center;
   margin-bottom: 15px;
   font-family: "Titan One", cursive;
-  font-style: normal;
-  font-weight: 400;
   font-size: 18px;
   line-height: 1.6;
   text-transform: uppercase;
@@ -985,11 +981,8 @@ p {
   text-align: center;
   margin-bottom: 144px;
   font-family: "Titan One", cursive;
-  font-style: normal;
-  font-weight: normal;
   font-size: 34px;
   line-height: 39px;
-  letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #d41443;
 }
@@ -1023,12 +1016,9 @@ p {
 .list-item-title-products {
   margin-bottom: 30px;
   font-family: "Titan One", cursive;
-  font-style: normal;
-  font-weight: 400;
   font-size: 20px;
   line-height: 23px;
   text-align: center;
-  letter-spacing: 0.04em;
   color: #ffffff;
   text-transform: uppercase;
 }
@@ -1049,18 +1039,18 @@ p {
   height: 6px;
   background-color: #ffffff;
   border-radius: 50%;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.wrapper-text-products {
+  margin-bottom: 30px;
 }
 
 .list-item-subtitle-products {
-  margin-bottom: 30px;
   font-family: "DM Sans", sans-serif;
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
-  line-height: 152%;
+  line-height: 1.52;
   text-align: center;
-  letter-spacing: 0.04em;
   color: #ffffff;
 }
 
@@ -1072,7 +1062,7 @@ p {
   margin: 0 auto;
 }
 
-@media screen and (min-deviсe-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .list-item-link-products {
     background-image: url(/arrow-right@2x.9b50d747.png);
     background-size: cover;
@@ -1128,7 +1118,7 @@ p {
   }
 
   .list-item-subtitle-products {
-    line-height: 176%;
+    line-height: 1.76;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1144,7 +1134,7 @@ p {
 
   .title-products {
     font-size: 58px;
-    line-height: 66px;
+    line-height: 1.14;
     margin-bottom: 259px;
   }
 
@@ -1181,7 +1171,7 @@ p {
 
   .list-item-subtitle-products {
     font-size: 16px;
-    line-height: 176%;
+    line-height: 1.76;
   }
 
   .wrapper-text-products {
@@ -1204,30 +1194,25 @@ p {
 }
 
 .section-title {
-  font-family: Titan One;
-  font-style: normal;
-  font-weight: normal;
+  display: block;
+  margin-bottom: 26px;
+  font-family: "Titan One", cursive;
   font-size: 18px;
   line-height: 1.16;
   text-align: center;
   text-transform: uppercase;
   color: #ffa5ba;
-  margin-bottom: 26px;
-  display: block;
 }
 
 .section-title-span {
-  font-family: Titan One;
-  font-style: normal;
-  font-weight: normal;
+  display: block;
+  margin-top: 15px;
+  font-family: "Titan One", cursive;
   font-size: 34px;
   line-height: 1.15;
   text-align: center;
-  letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #d41443;
-  margin-top: 15px;
-  display: block;
 }
 
 .text {
@@ -1238,15 +1223,12 @@ p {
 .main-text {
   margin-top: 46px;
   margin-bottom: 47px;
-  font-family: DM Sans;
-  font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.62;
 }
 
 .additional-text {
-  font-family: DM Sans;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.62;
@@ -1255,7 +1237,6 @@ p {
 
 .additional-text-low {
   margin-top: 10px;
-  font-family: DM Sans;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.62;
@@ -1292,20 +1273,15 @@ p {
 }
 
 .list-item-title {
-  font-family: Titan One;
-  font-style: normal;
-  font-weight: normal;
+  font-family: "Titan One", cursive;
   font-size: 36px;
   line-height: 1.14;
-  letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #d41443;
 }
 
 .list-item-text {
-  font-family: DM Sans;
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 12px;
   line-height: 1.7;
   color: #000000;
@@ -1348,7 +1324,6 @@ p {
   .section-title-span {
     font-size: 48px;
     line-height: 1.15;
-    letter-spacing: 0.04em;
   }
 
   .subscribe {
@@ -1685,30 +1660,29 @@ address {
 }
 
 .cafe-town {
-  letter-spacing: 0.04em;
   cursor: pointer;
   color: #000000;
 }
 
 .cafe-description {
-  font-weight: 500;
-  color: #907e82;
+  position: relative;
   margin-bottom: 25px;
   display: inline-block;
-  position: relative;
+  font-weight: 500;
+  color: #907e82;
 }
 
 .cafe-description::after {
+  position: absolute;
+  bottom: -25px;
   content: "";
   display: block;
   width: 179px;
   height: 1px;
-  background-color: #E1E1E1;
-  border: 1px;
-  position: absolute;
   margin-left: auto;
   margin-right: auto;
-  bottom: -25px;
+  background-color: #e1e1e1;
+  border: 1px;
 }
 
 .cafe-big-container {
@@ -1717,13 +1691,13 @@ address {
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .cafe-address-container {
+    position: relative;
+    top: -84px;
     width: 220px;
     padding-top: 43px;
     padding-right: 21px;
     padding-bottom: 43px;
     padding-left: 20px;
-    position: relative;
-    top: -84px;
   }
 
   .cafe-address-container:not(:last-child) {
@@ -1738,7 +1712,7 @@ address {
     text-align: center;
     letter-spacing: 0.04em;
     color: #ffffff;
-    background-color: #F0D1A5;
+    background-color: #f0d1a5;
     border-radius: 4px;
     display: inline;
     padding-left: 23px;
@@ -1777,19 +1751,17 @@ address {
   }
 
   .cafe-underline-indent {
-    padding-top: 25px;
+    margin-top: 25px;
   }
 
   .cafe-time {
     display: block;
-    font-style: normal;
     font-size: 12px;
     line-height: 1.833;
     color: #ffa5ba;
   }
 
   .cafe-contacts {
-    font-style: normal;
     font-size: 12px;
     line-height: 1.5;
     color: #907e82;
@@ -1805,13 +1777,13 @@ address {
   }
 
   .cafe-address-container {
+    position: relative;
+    top: -78px;
     width: 220px;
     padding-top: 50px;
     padding-right: 30px;
     padding-bottom: 50px;
     padding-left: 31px;
-    position: relative;
-    top: -78px;
   }
 
   .cafe-name {
@@ -1819,9 +1791,8 @@ address {
     line-height: 1.875;
     align-items: center;
     text-align: center;
-    letter-spacing: 0.04em;
     color: #ffffff;
-    background-color: #F0D1A5;
+    background-color: #f0d1a5;
     border-radius: 4px;
     display: inline;
     padding-left: 23px;
@@ -1839,12 +1810,12 @@ address {
   }
 
   .cafe-description {
+    position: relative;
     font-size: 14px;
     line-height: 1.642;
     color: #907e82;
     margin-bottom: 30px;
     display: inline-block;
-    position: relative;
   }
 
   .cafe-description::after {
@@ -1853,10 +1824,10 @@ address {
   }
 
   .cafe-work {
+    display: block;
     font-size: 14px;
     line-height: 1.857;
     color: #000000;
-    display: block;
   }
 
   .cafe-work:not(:last-child) {
@@ -1864,20 +1835,18 @@ address {
   }
 
   .cafe-underline-indent {
-    padding-top: 30px;
     display: block;
+    margin-top: 30px;
   }
 
   .cafe-time {
     display: block;
-    font-style: normal;
     font-size: 14px;
     line-height: 1.857;
     color: #ffa5ba;
   }
 
   .cafe-contacts {
-    font-style: normal;
     font-size: 14px;
     line-height: 1.857;
     color: #907e82;
@@ -1893,13 +1862,13 @@ address {
   }
 
   .cafe-address-container {
+    position: relative;
+    top: -102px;
     width: 330px;
     padding-top: 51px;
     padding-right: 42px;
     padding-bottom: 62px;
     padding-left: 42px;
-    position: relative;
-    top: -102px;
   }
 
   .cafe-big-container {
@@ -1923,12 +1892,12 @@ address {
 }
 @media screen and (min-width: 1200px) {
   .cafe-description {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 32px;
     font-size: 16px;
     line-height: 1.812;
     color: #907e82;
-    margin-bottom: 32px;
-    display: inline-block;
-    position: relative;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1951,7 +1920,7 @@ address {
 }
 @media screen and (min-width: 1200px) {
   .cafe-underline-indent {
-    padding-top: 32px;
+    margin-top: 32px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1967,7 +1936,7 @@ address {
   }
 }
 .cafe-name-color {
-  background-color: #C2E297;
+  background-color: #c2e297;
 }
 
 .cafe-buttons {
@@ -1984,10 +1953,10 @@ address {
   justify-content: center;
   border: none;
   color: #ffffff;
-  background-color: #D41342;
+  background-color: #d41342;
   cursor: pointer;
   border-radius: 22px;
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .cafe-button-one:hover, .cafe-button-one:focus {
   background-color: #d41443;
@@ -1995,21 +1964,21 @@ address {
 
 .cafe-button-two {
   display: flex;
-  background: #ffffff;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
   border-radius: 22px;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.312;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  color: #D41443;
+  color: #d41443;
+  background-color: #ffffff;
   border: none;
   cursor: pointer;
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .cafe-button-two:hover, .cafe-button-two:focus {
-  background-color: #ECEBEB;
+  background-color: #ecebeb;
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -2152,11 +2121,8 @@ footer .container {
   width: 236px;
   margin-bottom: 17px;
   font-family: "Titan One", cursive;
-  font-style: normal;
-  font-weight: normal;
   font-size: 18px;
   line-height: 1.17;
-  letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #ffa5ba;
 }
@@ -2180,8 +2146,6 @@ footer .container {
 .footer-slogan-bottom {
   width: 200px;
   font-family: "Titan One", cursive;
-  font-style: normal;
-  font-weight: normal;
   font-size: 34px;
   line-height: 1.15;
   letter-spacing: 0.06em;
@@ -2240,11 +2204,11 @@ footer .container {
 
 .footer-soc-list-item-link {
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  justify-content: center;
-  align-items: center;
   background-color: #ffa5ba;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -2264,10 +2228,9 @@ footer .container {
 
 .footer-address-link {
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 12px;
   line-height: 1.83;
-  /* or 22px */
   text-align: right;
   letter-spacing: 0.02em;
   color: #d41443;
@@ -2276,23 +2239,19 @@ footer .container {
   .footer-address-link {
     font-size: 14px;
     line-height: 1.86;
-    /* identical to box height, or 26px */
   }
 }
 @media screen and (min-width: 1200px) {
   .footer-address-link {
     font-size: 16px;
     line-height: 1.86;
-    /* identical to box height, or 30px */
-    letter-spacing: 0.02em;
   }
 }
 
 .footer-address-link-description {
   display: inline-flex;
   align-items: center;
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   letter-spacing: 0.02em;
   color: #000000;
 }
@@ -2301,11 +2260,9 @@ footer .container {
   width: 150px;
   height: 42px;
   margin: 0 auto;
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.5;
-  /* or 21px */
   text-align: center;
   color: #907e82;
 }
