@@ -129,7 +129,6 @@
   .hero-title {
     position: absolute;
     top: 171px;
-    // left: 115px;
     font-family: $title-font;
 
     font-size: 38px;
@@ -185,24 +184,21 @@
   }
   .hero-buttons .primary-button {
     width: 138px;
-    // height: 40px;
   }
   .hero-buttons .secondary-button {
     width: 104px;
-    // height: 40px;
   }
 
   .hero-buttons {
     position: absolute;
     top: 333px;
-    // left: 115px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .hero-product-description {
     width: 130px;
-    // height: 48px;
+
     font-family: $main-font;
 
     font-size: 8px;
@@ -254,7 +250,7 @@
   }
   .hero-button {
     width: 18px;
-    // height: 18px;
+
     border-radius: 50%;
     border: none;
     background-image: url(../images/section-hero/arrow-right-3.svg);
@@ -327,11 +323,9 @@
 @media screen and (max-width: 1199px) {
   .hero-buttons .secondary-button {
     width: 63px;
-    // height: 24px;
   }
 
   .hero-buttons .primary-button {
     width: 83px;
-    // height: 24px;
   }
 }

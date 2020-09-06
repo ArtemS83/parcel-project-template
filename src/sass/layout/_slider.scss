@@ -1,22 +1,16 @@
 // Стили для секции Слайдер
 .slider {
   position: relative;
-  // padding-top: 32px;
-  // padding-bottom: 170px;
   padding-bottom: 158px;
   text-align: center;
 
   @media screen and (min-width: $tablet) {
-    // padding-bottom: 197px;
     padding-bottom: 185px;
   }
   @media screen and (min-width: $desktop) {
-    // padding-bottom: 234px;
     padding-bottom: 222px;
   }
   &-clients-images {
-    // position: absolute;
-    // top: -51px;
     position: relative;
     top: -80px;
     width: 100%;
@@ -119,9 +113,6 @@
   }
   &-navigation-icon {
     fill: #d9d9d9;
-    // &.home {
-    //   fill: #d31342;
-    // }
   }
   &-list {
     position: relative;
@@ -197,8 +188,3 @@
 #slide-img-3:checked ~ .slider-navigation .ellipse3 {
   fill: #d31342;
 }
-// #slide-img-1:checked ~ .slider-navigation .home,
-// #slide-img-2:checked ~ .slider-navigation .ellipse2,
-// #slide-img-3:checked ~ .slider-navigation .ellipse3 {
-//   background-color: #d31342;
-// }
