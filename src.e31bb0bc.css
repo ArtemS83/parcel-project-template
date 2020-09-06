@@ -368,6 +368,10 @@ p {
 .secondary-button {
   color: #ffffff;
   background-color: #d41342;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.secondary-button:hover, .secondary-button:focus {
+  opacity: 0.7;
 }
 
 .cow .primary-button {
@@ -380,6 +384,7 @@ p {
   padding-bottom: 6px;
   text-align: center;
   cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .cow .primary-button:hover,
@@ -883,13 +888,18 @@ p {
 
   .hero-button {
     width: 18px;
+    height: 18px;
+    margin-left: 130px;
     border-radius: 50%;
     border: none;
     background-image: url(/arrow-right-3.424efebf.svg);
     background-size: contain;
     border-color: transparent;
     cursor: pointer;
-    margin-left: 130px;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .hero-button:hover, .hero-button:focus {
+    opacity: 0.7;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1060,6 +1070,10 @@ p {
   height: 40px;
   display: block;
   margin: 0 auto;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.list-item-link-products:hover, .list-item-link-products:focus {
+  opacity: 0.7;
 }
 
 @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
@@ -1732,7 +1746,6 @@ address {
   .cafe-description {
     font-size: 12px;
     line-height: 1.5;
-    margin-bottom: 25px;
   }
 
   .cafe-description::after {
@@ -1835,7 +1848,6 @@ address {
   }
 
   .cafe-underline-indent {
-    display: block;
     margin-top: 30px;
   }
 
@@ -1956,10 +1968,10 @@ address {
   background-color: #d41342;
   cursor: pointer;
   border-radius: 22px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .cafe-button-one:hover, .cafe-button-one:focus {
-  background-color: #d41443;
+  opacity: 0.7;
 }
 
 .cafe-button-two {
