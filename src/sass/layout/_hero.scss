@@ -29,15 +29,6 @@
 .hero .container {
   position: relative;
   height: 502px;
-  @media screen and (max-width: 767px) {
-    // background-image: url(../images/section-hero/ice-cream-mob.svg),
-    //   url(../images/section-hero/bg-ellipse-mob.svg),
-    //   url(../images/section-hero/bg-image-mob.jpg);
-    // background-repeat: no-repeat;
-    // background-position: bottom right 32px, top 83px right -62px, center;
-    // background-size: 171px, 346px, cover;
-    // padding-top: 193px;
-  }
   @media screen and (min-width: 380px) and (max-width: 767px) {
     background-image: url(../images/section-hero/ice-cream-mob.svg),
       url(../images/section-hero/bg-ellipse-mob.svg),
@@ -190,14 +181,15 @@
     font-size: 14px;
     line-height: 1.28;
     padding-top: 10px;
+    padding-bottom: 10px;
   }
   .hero-buttons .primary-button {
     width: 138px;
-    height: 40px;
+    // height: 40px;
   }
   .hero-buttons .secondary-button {
     width: 104px;
-    height: 40px;
+    // height: 40px;
   }
 
   .hero-buttons {
@@ -262,7 +254,7 @@
   }
   .hero-button {
     width: 18px;
-    height: 18px;
+    // height: 18px;
     border-radius: 50%;
     border: none;
     background-image: url(../images/section-hero/arrow-right-3.svg);
@@ -335,11 +327,11 @@
 @media screen and (max-width: 1199px) {
   .hero-buttons .secondary-button {
     width: 63px;
-    height: 24px;
+    // height: 24px;
   }
 
   .hero-buttons .primary-button {
     width: 83px;
-    height: 24px;
+    // height: 24px;
   }
 }
